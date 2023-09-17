@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: root123
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+  liquibase:
+    change-log: classpath:liquibase/master.yaml
+    enabled: true
+  servlet:
+    multipart:
+      max-request-size: 100MB
+      max-file-size: 100MB
+  sql:
+    init:
+      mode: always
+file:
+  path:
+    credentials: C:\Users\HP\IdeaProjects\google-api-test\src\main\resources\web_app.json
+    tokens: tokens
+spreadsheets:
+  port: 8888
+  application:
+    name: Google Sheet API Integration
