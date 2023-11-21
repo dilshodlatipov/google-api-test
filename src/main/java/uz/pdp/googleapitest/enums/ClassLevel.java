@@ -1,9 +1,8 @@
 package uz.pdp.googleapitest.enums;
 
 public enum ClassLevel {
-    FRESHMAN,
+    SENIOR,
     SOPHOMORE,
     JUNIOR,
-    SENIOR
-
+    FRESHMAN
 }

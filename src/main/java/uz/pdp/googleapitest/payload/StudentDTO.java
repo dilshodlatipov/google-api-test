@@ -1,28 +1,32 @@
 package uz.pdp.googleapitest.payload;
 
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import uz.pdp.googleapitest.entity.Student;
 import uz.pdp.googleapitest.enums.ClassLevel;
-import uz.pdp.googleapitest.enums.Sex;
+import uz.pdp.googleapitest.enums.Gender;
+import uz.pdp.googleapitest.enums.Major;
+import uz.pdp.googleapitest.enums.State;
+import uz.pdp.googleapitest.utils.MessageConstants;
 
+import java.io.Serializable;
+import java.util.UUID;
+
+/**
+ * DTO for {@link Student}
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
-public class StudentDTO {
-
-    private Long id;
-    @NotBlank
+public class StudentDTO implements Serializable {
+    private UUID id;
+    @NotBlank(message = MessageConstants.STUDENT_NAME_CAN_NOT_BE_BLANK)
     private String name;
-    @NotNull
-    private Sex sex;
-    @NotNull
+    private Gender gender;
     private ClassLevel classLevel;
-    @NotBlank
-    private String homeState;
-    @NotBlank
-    private String major;
-    @NotBlank
+    private State state;
+    private Major major;
     private String activity;
 }

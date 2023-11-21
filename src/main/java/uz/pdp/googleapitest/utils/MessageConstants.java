@@ -1,0 +1,10 @@
+package uz.pdp.googleapitest.utils;
+
+public interface MessageConstants {
+    String COMPANY_NOT_FOUND = "COMPANY NOT FOUND";
+    String INVALID_COMPANY = "INVALID COMPANY";
+    String INVALID_STUDENT = "INVALID_STUDENT";
+    String STUDENT_NOT_FOUND = "STUDENT_NOT_FOUND";
+    String STUDENT_NAME_CAN_NOT_BE_BLANK = "STUDENT_NAME_CAN_NOT_BE_BLANK";
+    String ID_OF_STUDENT_CAN_NOT_BE_NULL = "ID_OF_STUDENT_CAN_NOT_BE_NULL";
+}

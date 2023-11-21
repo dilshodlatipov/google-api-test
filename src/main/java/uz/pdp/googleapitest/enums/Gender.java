@@ -1,6 +1,6 @@
 package uz.pdp.googleapitest.enums;
 
-public enum Sex {
+public enum Gender {
     MALE,
     FEMALE
 }
