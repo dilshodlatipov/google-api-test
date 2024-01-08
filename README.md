@@ -19,18 +19,19 @@ get [Credentials](src/main/resources/sheet_credentials.json).
 * Then go to APIs & Services > OAuth consent screen and create a web app.
 * Then go to APIs & Services > Credentials and create OAuth client ID.
 
-For more information you can search from the internet.
+## This instruction may not be up to date. So for more accurate information, please read official documentation of the google cloud service.
+#### Note that if you are not logging in as owner of spreatsheet, app may fail because of setted range protection for id column. And if you don't want to log in as owner than I recommend to delete lines 89-99 in this [file](src/main/java/uz/pdp/googleapitest/service/StudentSheetServiceImpl.java).
 
 ### Reference Documentation
 
 For further reference, please consider the following sections:
 
+* [Google Sheets API Overview](https://developers.google.com/sheets/api/guides/concepts)
 * [Official Gradle documentation](https://docs.gradle.org)
 * [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/3.2.0-SNAPSHOT/gradle-plugin/reference/html/)
 * [Create an OCI image](https://docs.spring.io/spring-boot/docs/3.2.0-SNAPSHOT/gradle-plugin/reference/html/#build-image)
 * [Spring Web](https://docs.spring.io/spring-boot/docs/3.2.0-SNAPSHOT/reference/htmlsingle/index.html#web)
 * [Spring Web Services](https://docs.spring.io/spring-boot/docs/3.2.0-SNAPSHOT/reference/htmlsingle/index.html#io.webservices)
-* [Google Sheets API Overview](https://developers.google.com/sheets/api/guides/concepts)
 
 ### Guides
 
