@@ -1,6 +1,6 @@
 # Getting Started
 
-### Note that in this project deleting and updating(you can only update using spreadsheet) objects type of Student wasn't implemented.
+### Note that in this project deleting and updating (you can only update using spreadsheet) objects type of Student wasn't implemented.
 
 In this project in every ten minutes database will be updated accordingly to spreadsheet.
 For now, you can update Student table in spreadsheet. In the future, I'll add REST API to update Student table using
@@ -20,7 +20,7 @@ get [Credentials](src/main/resources/sheet_credentials.json).
 * Then go to APIs & Services > Credentials and create OAuth client ID.
 
 ## This instruction may not be up to date. So for more accurate information, please read official documentation of the google cloud service.
-#### Note that if you are not logging in as owner of spreatsheet, app may fail because of setted range protection for id column. And if you don't want to log in as owner than I recommend to delete lines 89-99 in this [file](src/main/java/uz/pdp/googleapitest/service/StudentSheetServiceImpl.java).
+#### Note that if you are not logging in as owner of spreadsheet, app may fail because of setted range protection for id column. And if you don't want to log in as owner than I recommend to delete lines 89-99 in this [file](src/main/java/uz/pdp/googleapitest/service/StudentSheetServiceImpl.java).
 
 ### Reference Documentation
 
